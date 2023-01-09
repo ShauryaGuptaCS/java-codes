@@ -13,9 +13,7 @@ public class q3 {
         System.out.println("enter the ith position");
         int pos=in.nextInt();
         int k,ans=n;
-        for(k=0;k<pos;k++){
-            ans=ans>>1;
-        }
+            ans=ans>>(pos-1);
         String bin=Integer.toBinaryString(n);
         System.out.println("Binary Value of a number is :"+ bin);
 
